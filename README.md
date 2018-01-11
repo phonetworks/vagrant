@@ -13,7 +13,7 @@ vagrant up
 
 ## Warning
 
-The dpkg and rpm package sources under the src/ folder have not been checked, and are not guaranteed to work. The Vagrant box is built for, and guaranteed to work with Ubuntu 16.04 only. 
+The dpkg and rpm package sources under the [src/](https://github.com/phonetworks/vagrant/tree/master/src) folder have not been checked, and are not guaranteed to work. The Vagrant box is built for, and guaranteed to work with Ubuntu 16.04 only. 
 
 ## Cleanup
 
