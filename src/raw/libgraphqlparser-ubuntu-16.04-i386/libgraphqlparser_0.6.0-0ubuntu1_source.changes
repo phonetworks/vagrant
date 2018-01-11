@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 19 Jun 2017 16:35:11 +0300
+Source: libgraphqlparser
+Binary: libgraphqlparser
+Architecture: source
+Version: 0.6.0-0ubuntu1
+Distribution: xenial
+Urgency: medium
+Maintainer: Emre Sokullu <emre@phonetworks.org>
+Changed-By: Emre Sokullu <emre@phonetworks.org>
+Description:
+ libgraphqlparser - parser for GraphQL
+Changes:
+ libgraphqlparser (0.6.0-0ubuntu1) xenial; urgency=medium
+ .
+   * Initial release
+Checksums-Sha1:
+ f1a68f42f3b0bb15a9f81450735b18c3fb257ba1 1463 libgraphqlparser_0.6.0-0ubuntu1.dsc
+ 418c63938c902588c74931bb400fb8e7449ded55 79820 libgraphqlparser_0.6.0.orig.tar.gz
+ 84993513d5b71899d41da584a747d71874e09ff6 2708 libgraphqlparser_0.6.0-0ubuntu1.debian.tar.xz
+Checksums-Sha256:
+ 357ca8caa115e59211e502685642197021b5c7793db111f3d36246dad78a5aae 1463 libgraphqlparser_0.6.0-0ubuntu1.dsc
+ 9b2564530001aadd40cb3ce3a8b9ff5532c37fc27e4b58055b2a0f9333f96b69 79820 libgraphqlparser_0.6.0.orig.tar.gz
+ 7f7edc8581ef321d98809fc237f1a1ada31555c94eccd7778471b42bf40d0cbd 2708 libgraphqlparser_0.6.0-0ubuntu1.debian.tar.xz
+Files:
+ 7ea7d3be46aac3e6bb3e0b00bffab95e 1463 libdevel optional libgraphqlparser_0.6.0-0ubuntu1.dsc
+ d92a361f3015bb0d8961ede4166e1273 79820 libdevel optional libgraphqlparser_0.6.0.orig.tar.gz
+ 03b1dcfc0a25f948357ad574bc9e312c 2708 libdevel optional libgraphqlparser_0.6.0-0ubuntu1.debian.tar.xz
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZTRYgAAoJEB5TT96vNwgwQHEH/04Tnl4Y9rfTxSXzeHj6h2QZ
+RQ+Al5bfi0sI+CBuOWG4vGyKMFJXC1aqmZpx0JO7bd5XvW5pGS8LRxyHjGnUIV5I
+H8aKdrOHP5ReUpQHXBbiedIxTS92XI/FBg8jRYaNuczV0PoLimJOphF2NkhKeT58
+vgZE6TIlBC5EqsMF8KxgDmkbLcUYWQfStQiBjBdfjukNf+MGjVYPMrXzmgievzWP
+fUtTVrJ8BFYD7V74i4s0aBVbpaKVJL5OPxeyRaqf5/nbPrlJiVOjqeYhGdGRrrNN
+FgB36yAz+XUPZXOx9CKLVk+iepJD+CA3+9Hz/Kp4D7P7gSBk0UcVZWroD/5JccI=
+=RLf6
+-----END PGP SIGNATURE-----

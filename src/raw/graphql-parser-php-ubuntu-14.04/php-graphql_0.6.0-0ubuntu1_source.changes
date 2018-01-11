@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 19 Jun 2017 16:35:11 +0300
+Source: php-graphql
+Binary: php-graphql
+Architecture: source
+Version: 0.6.0-0ubuntu1
+Distribution: trusty
+Urgency: medium
+Maintainer: Emre Sokullu <emre@phonetworks.org>
+Changed-By: Emre Sokullu <emre@phonetworks.org>
+Description: 
+ php-graphql - PHP bindings for libgraphqlparser
+Changes: 
+ php-graphql (0.6.0-0ubuntu1) trusty; urgency=medium
+ .
+   * Initial release
+Checksums-Sha1: 
+ d82ca9490ca76487f42dbdb2710a7cff8070e314 1204 php-graphql_0.6.0-0ubuntu1.dsc
+ 572881d1734bb2238dd9dced8c27dfe610a1eeff 76835 php-graphql_0.6.0-0ubuntu1.tar.gz
+Checksums-Sha256: 
+ 56d82ea41c060f47e1d4b74eecd43632b97f23c4768059bde21896570fd4fd85 1204 php-graphql_0.6.0-0ubuntu1.dsc
+ d2517516fc020b598c85f2519489a19abc80ca5f8cdb1f1bab9104d7caa75dd1 76835 php-graphql_0.6.0-0ubuntu1.tar.gz
+Files: 
+ 4ef69e175fb2d22306ebea53b3902806 1204 web optional php-graphql_0.6.0-0ubuntu1.dsc
+ 14623a8a1bcdb3fc40a7fb21ed86fba0 76835 web optional php-graphql_0.6.0-0ubuntu1.tar.gz
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZT745AAoJEB5TT96vNwgwIyIH/3JtbkDH5Zl53YjjFOx1Snzs
+zduVZxk4nJGZzE5B2nv1dDPo5Rw/xBIn7kzdFtJeub0urSBMc3AXzij+b30dSe+S
+Dfkpvrw3QpejzzLD0E6jmEyUhMWQxT7FLG8znQ0WinR2IXRIPHqj9+qWFIAztf0n
+i85vGNcXIBCUYYeglbG6SjdBiz5gtG8w3zr8mTWiUJ7Em+OWYwmeJFCnCVD1MS36
+l15wBS6BcC3BlJ6lmABMF9RKPxF95/IdUvW6h0GjDQblVxziFOewzbeZ922pwXY6
+HHqC4Fs3UZosAeSTYqvJnpFz9XVcOjDV5/HIJoAOx6IJFJRxLosojDvTvX+IAo8=
+=MN9v
+-----END PGP SIGNATURE-----

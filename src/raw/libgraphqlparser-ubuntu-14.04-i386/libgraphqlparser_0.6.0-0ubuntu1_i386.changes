@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 19 Jun 2017 16:35:11 +0300
+Source: libgraphqlparser
+Binary: libgraphqlparser
+Architecture: source i386
+Version: 0.6.0-0ubuntu1
+Distribution: trusty
+Urgency: medium
+Maintainer: Emre Sokullu <emre@phonetworks.org>
+Changed-By: Emre Sokullu <emre@phonetworks.org>
+Description: 
+ libgraphqlparser - parser for GraphQL
+Changes: 
+ libgraphqlparser (0.6.0-0ubuntu1) trusty; urgency=medium
+ .
+   * Initial release
+Checksums-Sha1: 
+ 0b6143ce9d2d7915fa1e6923db2f6569318a2192 1458 libgraphqlparser_0.6.0-0ubuntu1.dsc
+ 418c63938c902588c74931bb400fb8e7449ded55 79820 libgraphqlparser_0.6.0.orig.tar.gz
+ ff8de1354d6050b88eea40160b5cadbf61498b58 2789 libgraphqlparser_0.6.0-0ubuntu1.debian.tar.gz
+ 9abc48c37043d8dc8a0a7b20d02e08e756290065 68292 libgraphqlparser_0.6.0-0ubuntu1_i386.deb
+Checksums-Sha256: 
+ ab922df41ad275c9733d57f19fb14d87a8902031c339feb2848b08da238c7f9b 1458 libgraphqlparser_0.6.0-0ubuntu1.dsc
+ 9b2564530001aadd40cb3ce3a8b9ff5532c37fc27e4b58055b2a0f9333f96b69 79820 libgraphqlparser_0.6.0.orig.tar.gz
+ 7fdb2b6e56d0e32ded687124940d017ae986f97317eab129c3c099a93dc63e53 2789 libgraphqlparser_0.6.0-0ubuntu1.debian.tar.gz
+ 39c8fc8b7116fde9c954242cd96091b8a80fdd6aa8b0e84d525ab651d0148bce 68292 libgraphqlparser_0.6.0-0ubuntu1_i386.deb
+Files: 
+ c1a051f876103b36b6996907b3b51640 1458 libdevel optional libgraphqlparser_0.6.0-0ubuntu1.dsc
+ d92a361f3015bb0d8961ede4166e1273 79820 libdevel optional libgraphqlparser_0.6.0.orig.tar.gz
+ 48467ef755de19706fc93753caaadd2d 2789 libdevel optional libgraphqlparser_0.6.0-0ubuntu1.debian.tar.gz
+ c5440d414dff29a72285415eb0fef40c 68292 libdevel optional libgraphqlparser_0.6.0-0ubuntu1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZTRmeAAoJEB5TT96vNwgwAP4H/A6WmAkunTuIK1RupzRdSEUX
+BYf0lQQogzt76rviJ8TduuhGyy0apiytKhELZud/rYE3/crxSCHlWYyyqOyOQtze
+MxmBQ80oHNcH3HOFO1S6v2o5D6LBI1KLGMDhEkCEZqKXkOEFQJDralYmNV9ZIGl3
+t/uZSxlNoq9GiC0Wt9kWg1vRZ6+FQFLPttxpJ9R3y7JLi//lr4AUQa+QKpNxPdYo
+H0wtyuGfOw48nB2RcImomgbLRDHr1kThdqGJ0ZBtRAjwbvq5ks+B2BceOmonUguZ
+2UcougfGqbvdKGGJ6hSu8Potvv+hadnCFOsITIo0+/BcuMc+p5/HUSOjLtK4M5c=
+=CfAk
+-----END PGP SIGNATURE-----

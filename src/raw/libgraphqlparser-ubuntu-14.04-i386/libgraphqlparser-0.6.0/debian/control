@@ -1,0 +1,15 @@
+Source: libgraphqlparser
+Section: libdevel
+Priority: optional
+Maintainer: Emre Sokullu <emre@phonetworks.org>
+Build-Depends: debhelper (>= 9), cmake
+Standards-Version: 3.9.8
+Homepage: https://github.com/graphql/libgraphqlparser
+#Vcs-Git: https://anonscm.debian.org/collab-maint/libgraphqlparser.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/libgraphqlparser.git
+
+Package: libgraphqlparser
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: parser for GraphQL
+ libgraphqlparser is a parser for GraphQL, a query language created by Facebook 

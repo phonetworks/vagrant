@@ -1,0 +1,11 @@
+--- dump_json_ast.cpp.orig	2017-06-20 12:06:26.687665728 +0300
++++ dump_json_ast.cpp	2017-06-20 12:07:52.347587977 +0300
+@@ -32,7 +32,7 @@
+   } else {
+     in = stdin;
+   }
+-  auto AST = facebook::graphql::parseFile(in, &error);
++  auto AST = facebook::graphql::parseFileWithExperimentalSchemaSupport(in, &error);
+   if (argc > 1) {
+     fclose(in);
+   }

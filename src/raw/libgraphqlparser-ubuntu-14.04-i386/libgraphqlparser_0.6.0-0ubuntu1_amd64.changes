@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 19 Jun 2017 16:35:11 +0300
+Source: libgraphqlparser
+Binary: libgraphqlparser
+Architecture: source amd64
+Version: 0.6.0-0ubuntu1
+Distribution: trusty
+Urgency: medium
+Maintainer: Emre Sokullu <emre@phonetworks.org>
+Changed-By: Emre Sokullu <emre@phonetworks.org>
+Description: 
+ libgraphqlparser - parser for GraphQL
+Changes: 
+ libgraphqlparser (0.6.0-0ubuntu1) trusty; urgency=medium
+ .
+   * Initial release
+Checksums-Sha1: 
+ 8f805bf71b38d3712e2fd0c019e9ac14917a5c49 1458 libgraphqlparser_0.6.0-0ubuntu1.dsc
+ 418c63938c902588c74931bb400fb8e7449ded55 79820 libgraphqlparser_0.6.0.orig.tar.gz
+ 806e15e2fcc274e42d02cdccc1315adf76e6fc63 2832 libgraphqlparser_0.6.0-0ubuntu1.debian.tar.gz
+ 09b7b78efb87e4402331d239ade50e08cb3fb9ce 70658 libgraphqlparser_0.6.0-0ubuntu1_amd64.deb
+Checksums-Sha256: 
+ 95d7a2d4543a319b15bb661112d0d809c4897fcd799bb3606048d263001ca77d 1458 libgraphqlparser_0.6.0-0ubuntu1.dsc
+ 9b2564530001aadd40cb3ce3a8b9ff5532c37fc27e4b58055b2a0f9333f96b69 79820 libgraphqlparser_0.6.0.orig.tar.gz
+ abf701477138af47b093984f5ec8359e6c8802cc209225b5fd37d2bebd10fb4f 2832 libgraphqlparser_0.6.0-0ubuntu1.debian.tar.gz
+ ea0e7074d347d968ce7c3b2632ed17eb92e9cd4e782d963abc902fe3dca5474f 70658 libgraphqlparser_0.6.0-0ubuntu1_amd64.deb
+Files: 
+ 0474bc531887bb6ad0182c60cc3e0298 1458 libdevel optional libgraphqlparser_0.6.0-0ubuntu1.dsc
+ d92a361f3015bb0d8961ede4166e1273 79820 libdevel optional libgraphqlparser_0.6.0.orig.tar.gz
+ 4a8787c6979ff6328b9dc5a7a3cc3059 2832 libdevel optional libgraphqlparser_0.6.0-0ubuntu1.debian.tar.gz
+ 9202c98a646a2e1501947f9d002a4855 70658 libdevel optional libgraphqlparser_0.6.0-0ubuntu1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZS6H9AAoJEB5TT96vNwgwD/QH/iPFT/Hld1SVoxXocLJTYzso
+FvGFUdslAmyGBDcUCz74pwKKN8M+OPdj838ihXzhPMKtbeXXGeldnv02dyFjNiwX
+yOhbO9WtqcyFfcK3j0ZGWk+Qit1RlkqG4HB0yBcmBCuR3+vhOGSbv5fEjwArwzb9
+0IWAENBXYZdBebEZiv80Hofb0DwAmdiHgsELG1HO5cs4ELE60e4Cul6YMo0chIqk
+hZOGP+YVskbNXiz52cca8lhctzpY41YWt8Sio0pGSRXBxsBkD2SkQsNuj2ikSOjn
+EOOjxDLRjDzmP5D8eRnkY1t9gqQ8AOr0Op4CvgVt75GvatPkKSFGc5cAjfKZWJQ=
+=Y4zu
+-----END PGP SIGNATURE-----

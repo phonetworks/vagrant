@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib64
+includedir=${prefix}/include/graphqlparser
+
+Name: libgraphqlparser
+Description: facebook graphql parsing library
+Version: 0.0-dev
+Libs: -L${libdir} -lgraphqlparser
+Libs.private:
+Cflags: -I${includedir} 

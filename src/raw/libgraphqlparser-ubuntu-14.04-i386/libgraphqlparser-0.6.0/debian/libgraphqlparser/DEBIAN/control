@@ -1,0 +1,11 @@
+Package: libgraphqlparser
+Version: 0.6.0-0ubuntu1
+Architecture: i386
+Maintainer: Emre Sokullu <emre@phonetworks.org>
+Installed-Size: 378
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.2.1)
+Section: libdevel
+Priority: optional
+Homepage: https://github.com/graphql/libgraphqlparser
+Description: parser for GraphQL
+ libgraphqlparser is a parser for GraphQL, a query language created by Facebook

@@ -1,0 +1,11 @@
+--- graphql.c.orig	2017-06-22 10:36:03.118998168 -0400
++++ graphql.c	2017-06-22 10:36:27.814999848 -0400
+@@ -44,7 +44,7 @@
+ 		return;
+ 	}
+ 
+-	ast = graphql_parse_string(input, &error);
++	ast = graphql_parse_string_with_experimental_schema_support(input, &error);
+ 
+ 	if (ast == NULL) {
+ #if PHP_VERSION_ID < 50505

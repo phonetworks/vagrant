@@ -1,0 +1,5 @@
+php-graphql (0.6.0-0ubuntu1) xenial; urgency=medium
+
+  * Initial release
+
+ -- Emre Sokullu <emre@phonetworks.org>  Mon, 19 Jun 2017 16:35:11 +0300

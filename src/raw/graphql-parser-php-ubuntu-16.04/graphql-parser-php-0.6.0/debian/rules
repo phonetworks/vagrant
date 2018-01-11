@@ -1,0 +1,91 @@
+#!/usr/bin/make -f
+# Sample debian/rules that uses debhelper.
+# This file is public domain software, originally written by Joey Hess. 
+#
+# This version is for packages that are architecture dependent.
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+DEB_SRCDIR=$(shell pwd)
+INSTALL_DIR=$(DEB_SRCDIR)/debian/$(shell dh_listpackages)
+EXTENSION_DIR=`php-config --extension-dir`
+CFLAGS = -O3
+
+
+build: build-stamp
+build-stamp:
+	dh_testdir
+
+	cd $(DEB_SRCDIR) && phpize --clean && phpize && \
+		./configure --with-php-config=/usr/bin/php-config --prefix=/usr
+	$(MAKE) -C $(DEB_SRCDIR)
+
+	touch build-stamp
+
+clean:
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp
+
+	cd $(DEB_SRCDIR) && phpize --clean
+	#$(MAKE) -C $(DEB_SRCDIR) clean
+	#$(MAKE) distclean
+
+	dh_clean
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_prep
+	dh_quilt_patch
+	dh_installdirs
+
+	# Add here commands to install the package into debian/<packagename>
+	$(MAKE) prefix=$(INSTALL_DIR)/usr EXTENSION_DIR=$(INSTALL_DIR)$(EXTENSION_DIR) install
+	mkdir -p $(INSTALL_DIR)/etc/php/7.0/mods-available
+	install -m 644 debian/z_graphql.ini $(INSTALL_DIR)/etc/php/7.0/mods-available
+
+# Build architecture-independent files here.
+binary-indep: build install
+# We have nothing to do by default.
+
+# Build architecture-dependent files here.
+binary-arch: build install
+	dh_testdir
+	dh_testroot
+	dh_quilt_patch
+	dh_installchangelogs
+	dh_installdocs
+	dh_installexamples
+#	dh_install
+#	dh_installmenu
+#	dh_installdebconf	
+#	dh_installlogrotate
+#	dh_installemacsen
+#	dh_installcatalogs
+#	dh_installpam
+#	dh_installmime
+#	dh_installinit
+#	dh_installcron
+#	dh_installinfo
+#	dh_installwm
+#	dh_installudev
+#	dh_lintian
+#	dh_bugfiles
+#	dh_undocumented
+	dh_installman
+	dh_link
+	dh_strip
+	dh_compress
+	dh_fixperms
+#	dh_perl
+#	dh_makeshlibs
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install

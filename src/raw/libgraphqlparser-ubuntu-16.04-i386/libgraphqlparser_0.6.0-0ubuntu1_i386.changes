@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 19 Jun 2017 16:35:11 +0300
+Source: libgraphqlparser
+Binary: libgraphqlparser
+Architecture: source i386
+Version: 0.6.0-0ubuntu1
+Distribution: xenial
+Urgency: medium
+Maintainer: Emre Sokullu <emre@phonetworks.org>
+Changed-By: Emre Sokullu <emre@phonetworks.org>
+Description:
+ libgraphqlparser - parser for GraphQL
+Changes:
+ libgraphqlparser (0.6.0-0ubuntu1) xenial; urgency=medium
+ .
+   * Initial release
+Checksums-Sha1:
+ ba615ea4c90a361c87111784238df05997e64ceb 1463 libgraphqlparser_0.6.0-0ubuntu1.dsc
+ 418c63938c902588c74931bb400fb8e7449ded55 79820 libgraphqlparser_0.6.0.orig.tar.gz
+ 2b3c02e9bb06279a8843f828a2cac492d7c7ef90 2708 libgraphqlparser_0.6.0-0ubuntu1.debian.tar.xz
+ 8b09969fff97d013a5e59608363dfdd424a20a56 77870 libgraphqlparser_0.6.0-0ubuntu1_i386.deb
+Checksums-Sha256:
+ 8933edd440b86819ba660f9b432077b97e0ae8656008b590cbc085911a413c56 1463 libgraphqlparser_0.6.0-0ubuntu1.dsc
+ 9b2564530001aadd40cb3ce3a8b9ff5532c37fc27e4b58055b2a0f9333f96b69 79820 libgraphqlparser_0.6.0.orig.tar.gz
+ a818aaa443ada655c2bbfe8b6b36a8c4180f96912d10bb6eb0e0cbbb8ebaac0d 2708 libgraphqlparser_0.6.0-0ubuntu1.debian.tar.xz
+ 2f3af08a3c95716c1676598ff3f2da2175497caee9d50c4d6f8bd275f2b2fca6 77870 libgraphqlparser_0.6.0-0ubuntu1_i386.deb
+Files:
+ df4f66bd72593d09bb1bf5cd0cb30138 1463 libdevel optional libgraphqlparser_0.6.0-0ubuntu1.dsc
+ d92a361f3015bb0d8961ede4166e1273 79820 libdevel optional libgraphqlparser_0.6.0.orig.tar.gz
+ 44d67de2d476b108be7a0213d4922101 2708 libdevel optional libgraphqlparser_0.6.0-0ubuntu1.debian.tar.xz
+ e9f8dcb496f8a2822df59e08296d45b5 77870 libdevel optional libgraphqlparser_0.6.0-0ubuntu1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZTRYaAAoJEB5TT96vNwgw7nMH/jDqJTLvEwAfeUnFOJyTySnr
+l4dPcuQA6W2nTcxXuVvtgoD3HmACcOcPPkn98TXvy21QkkDuFj0YSHr3o69h+ZyG
+Gwj9ZGkboInMUIfCo0r0n7341AY/Ubi+Ab1CrXYu5Fv0k5zPzOdbnVJ/jWSH6VpD
+du8rnsgd53ogrsttrk14iPfo9MSoLvegI7N9Sfiwa0cMuVDbhVTFaC1lOWI7KQ6v
+10fqDnuEXp2jHK8NdB89q3xK4dtKji54c9R3e0X16F5CuPsw9KkUoET2gUfMC+xx
+b7zT163vB/Vll8D05vvPxEa2FyHzSF6l+BhLl6j7S79d8RkU+T2f2TakPU1tKZQ=
+=JfK8
+-----END PGP SIGNATURE-----

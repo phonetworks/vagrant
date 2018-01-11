@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 19 Jun 2017 16:35:11 +0300
+Source: libgraphqlparser
+Binary: libgraphqlparser
+Architecture: source amd64
+Version: 0.6.0-0ubuntu1
+Distribution: xenial
+Urgency: medium
+Maintainer: Emre Sokullu <emre@phonetworks.org>
+Changed-By: Emre Sokullu <emre@phonetworks.org>
+Description:
+ libgraphqlparser - parser for GraphQL
+Changes:
+ libgraphqlparser (0.6.0-0ubuntu1) xenial; urgency=medium
+ .
+   * Initial release
+Checksums-Sha1:
+ 840cd5e7bfe58759bfa97094461652f19eb6bf76 1463 libgraphqlparser_0.6.0-0ubuntu1.dsc
+ 418c63938c902588c74931bb400fb8e7449ded55 79820 libgraphqlparser_0.6.0.orig.tar.gz
+ 7e7d745e10df000c987d55f28eb4e282602b1aec 2696 libgraphqlparser_0.6.0-0ubuntu1.debian.tar.xz
+ 7a05716d811b97258efd449559a7716aa0983357 76930 libgraphqlparser_0.6.0-0ubuntu1_amd64.deb
+Checksums-Sha256:
+ 076d10776778eccbfb03666a2b27f2ad4dc34a79e8dd82c9a947609b781a1aeb 1463 libgraphqlparser_0.6.0-0ubuntu1.dsc
+ 9b2564530001aadd40cb3ce3a8b9ff5532c37fc27e4b58055b2a0f9333f96b69 79820 libgraphqlparser_0.6.0.orig.tar.gz
+ a907e8300a48ff51c3f30e4ca2d7faedf13987a8a6662ce04b1afd3c4a9d0ddc 2696 libgraphqlparser_0.6.0-0ubuntu1.debian.tar.xz
+ 4b78d8c18ca23424c63f627f1b83cc18a73bc2f5c38cab8348f7a3fa79023d6b 76930 libgraphqlparser_0.6.0-0ubuntu1_amd64.deb
+Files:
+ f9781aa1c8e3ec1cf8b8df058e1ca9d5 1463 libdevel optional libgraphqlparser_0.6.0-0ubuntu1.dsc
+ d92a361f3015bb0d8961ede4166e1273 79820 libdevel optional libgraphqlparser_0.6.0.orig.tar.gz
+ dfb0f3b066524402decaef3c054a3f91 2696 libdevel optional libgraphqlparser_0.6.0-0ubuntu1.debian.tar.xz
+ 2f8d8232cccf1269ca7b9eaf2d8009b1 76930 libdevel optional libgraphqlparser_0.6.0-0ubuntu1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZS6HzAAoJEB5TT96vNwgwJkYH+wXzJEODQpeszKEeiGeYfQBx
+kgGWbDug1IARhyt8L0Kdbv1fKXS6NVR5kpE/qmzkMbOCy+3mT+zmMNphgpwEiXUY
+qn1JLkR4hj6sRBtm2+a/7+disKfqES/lKasnf+tAnMFSufEqOpplXpn84+iey9OD
+BDjy+78es/E9hpoaWjWL6HxNkudSgq20bglKXiA/rQGMKOkdnoLYBICN44vZ8dqz
+dlIHUjMm0fKQv+E4z7CUWQ+p73l30VpJ3OJpl3Z/T0nyQ7//kxzD3AEBV+l7qVBS
+vHlKm8LdNGGn2Ybu8EPlpXr7rXJUGHlVIXcAlwa/2LwpnZR0u03QEM/+TPSRYxQ=
+=jufZ
+-----END PGP SIGNATURE-----

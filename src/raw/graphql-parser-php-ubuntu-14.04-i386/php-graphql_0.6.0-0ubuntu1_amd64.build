@@ -1,0 +1,234 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: warning: using a gain-root-command while being root
+dpkg-buildpackage: source package php-graphql
+dpkg-buildpackage: source version 0.6.0-0ubuntu1
+dpkg-buildpackage: source distribution trusty
+dpkg-buildpackage: source changed by Emre Sokullu <emre@phonetworks.org>
+ dpkg-source --before-build graphql-parser-php-0.6.0
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh_testdir
+dh_testroot
+rm -f build-stamp
+cd /home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0 && phpize --clean
+Cleaning..
+#/usr/bin/make -C /home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0 clean
+#/usr/bin/make distclean
+dh_clean
+ dpkg-source -b graphql-parser-php-0.6.0
+dpkg-source: warning: no source format specified in debian/source/format, see dpkg-source(1)
+dpkg-source: warning: Version number suggests Ubuntu changes, but Maintainer: does not have Ubuntu address
+dpkg-source: warning: Version number suggests Ubuntu changes, but there is no XSBC-Original-Maintainer field
+dpkg-source: warning: source directory 'graphql-parser-php-0.6.0' is not <sourcepackage>-<upstreamversion> 'php-graphql-0.6.0'
+dpkg-source: info: using source format `1.0'
+dpkg-source: info: building php-graphql in php-graphql_0.6.0-0ubuntu1.tar.gz
+dpkg-source: info: building php-graphql in php-graphql_0.6.0-0ubuntu1.dsc
+ debian/rules build
+dh_testdir
+cd /home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0 && phpize --clean && phpize && \
+		./configure --with-php-config=/usr/bin/php-config --prefix=/usr
+Cleaning..
+Configuring for:
+PHP Api Version:         20121113
+Zend Module Api No:      20121212
+Zend Extension Api No:   220121212
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for a sed that does not truncate output... /bin/sed
+checking for cc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether cc accepts -g... yes
+checking for cc option to accept ISO C89... none needed
+checking how to run the C preprocessor... cc -E
+checking for icc... no
+checking for suncc... no
+checking whether cc understands -c and -o together... yes
+checking for system library directory... lib
+checking if compiler supports -R... no
+checking if compiler supports -Wl,-rpath,... yes
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking for PHP prefix... /usr
+checking for PHP includes... -I/usr/include/php5 -I/usr/include/php5/main -I/usr/include/php5/TSRM -I/usr/include/php5/Zend -I/usr/include/php5/ext -I/usr/include/php5/ext/date/lib
+checking for PHP extension directory... /usr/lib/php5/20121212
+checking for PHP installed headers prefix... /usr/include/php5
+checking if debug is enabled... no
+checking if zts is enabled... no
+checking for re2c... no
+configure: WARNING: You will need re2c 0.13.4 or later if you want to regenerate PHP parsers.
+checking for gawk... gawk
+checking whether to enable graphql support... yes, shared
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for graphql_parse_string in -lgraphqlparser... yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 3458764513820540925
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking for gawk... (cached) gawk
+checking command to parse /usr/bin/nm -B output from cc object... ok
+checking for sysroot... no
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+configure: creating ./config.status
+config.status: creating config.h
+config.status: executing libtool commands
+/usr/bin/make -C /home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0
+make[1]: Entering directory `/home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0'
+/bin/bash /home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/libtool --mode=compile cc  -I. -I/home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0 -DPHP_ATOM_INC -I/home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/include -I/home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/main -I/home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0 -I/usr/include/php5 -I/usr/include/php5/main -I/usr/include/php5/TSRM -I/usr/include/php5/Zend -I/usr/include/php5/ext -I/usr/include/php5/ext/date/lib -I/usr/local/include  -DHAVE_CONFIG_H  -g -O2   -c /home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/graphql.c -o graphql.lo 
+libtool: compile:  cc -I. -I/home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0 -DPHP_ATOM_INC -I/home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/include -I/home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/main -I/home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0 -I/usr/include/php5 -I/usr/include/php5/main -I/usr/include/php5/TSRM -I/usr/include/php5/Zend -I/usr/include/php5/ext -I/usr/include/php5/ext/date/lib -I/usr/local/include -DHAVE_CONFIG_H -g -O2 -c /home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/graphql.c  -fPIC -DPIC -o .libs/graphql.o
+/bin/bash /home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/libtool --mode=link cc -DPHP_ATOM_INC -I/home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/include -I/home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/main -I/home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0 -I/usr/include/php5 -I/usr/include/php5/main -I/usr/include/php5/TSRM -I/usr/include/php5/Zend -I/usr/include/php5/ext -I/usr/include/php5/ext/date/lib -I/usr/local/include  -DHAVE_CONFIG_H  -g -O2   -o graphql.la -export-dynamic -avoid-version -prefer-pic -module -rpath /home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/modules  graphql.lo -Wl,-rpath,/usr/local/lib -L/usr/local/lib -lgraphqlparser
+libtool: link: cc -shared  -fPIC -DPIC  .libs/graphql.o   -L/usr/local/lib -lgraphqlparser  -O2 -Wl,-rpath -Wl,/usr/local/lib   -Wl,-soname -Wl,graphql.so -o .libs/graphql.so
+libtool: link: ( cd ".libs" && rm -f "graphql.la" && ln -s "../graphql.la" "graphql.la" )
+/bin/bash /home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/libtool --mode=install cp ./graphql.la /home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/modules
+libtool: install: cp ./.libs/graphql.so /home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/modules/graphql.so
+libtool: install: cp ./.libs/graphql.lai /home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/modules/graphql.la
+libtool: finish: PATH="/usr/sbin:/usr/bin:/sbin:/bin:/usr/bin/X11:/sbin" ldconfig -n /home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/modules
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/modules
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+
+Build complete.
+Don't forget to run 'make test'.
+
+make[1]: Leaving directory `/home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0'
+touch build-stamp
+ fakeroot debian/rules binary
+dh_testdir
+dh_testroot
+dh_prep
+dh_installdirs
+# Add here commands to install the package into debian/<packagename>
+/usr/bin/make prefix=/home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/debian/php-graphql/usr EXTENSION_DIR=/home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/debian/php-graphql`php-config --extension-dir` install
+make[1]: Entering directory `/home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0'
+Installing shared extensions:     /home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/debian/php-graphql/usr/lib/php5/20121212/
+make[1]: Leaving directory `/home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0'
+mkdir -p /home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/debian/php-graphql/etc/php5/mods-available
+install -m 644 debian/z_graphql.ini /home/adm1/graphql-parser-php-ubuntu-14.04/graphql-parser-php-0.6.0/debian/php-graphql/etc/php5/mods-available
+dh_testdir
+dh_testroot
+dh_installchangelogs
+dh_installdocs
+dh_installexamples
+dh_installman
+dh_link
+dh_strip
+dh_compress
+dh_fixperms
+dh_installdeb
+dh_shlibdeps
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libgraphqlparser.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libgraphqlparser.so'
+dpkg-shlibdeps: warning: debian/php-graphql/usr/lib/php5/20121212/graphql.so contains an unresolvable reference to symbol php_json_decode_ex: it's probably a plugin
+dpkg-shlibdeps: warning: 7 other similar warnings have been skipped (use -v to see them all)
+dh_gencontrol
+dpkg-gencontrol: warning: Depends field of package php-graphql: unknown substitution variable ${php:Depends}
+dpkg-gencontrol: warning: Depends field of package php-graphql: unknown substitution variable ${phppear:Debian-Depends}
+dpkg-gencontrol: warning: Recommends field of package php-graphql: unknown substitution variable ${phppear:Debian-Recommends}
+dpkg-gencontrol: warning: Breaks field of package php-graphql: unknown substitution variable ${phppear:Debian-Breaks}
+dh_md5sums
+dh_builddeb
+dpkg-deb: building package `php-graphql' in `../php-graphql_0.6.0-0ubuntu1_amd64.deb'.
+ dpkg-genchanges  >../php-graphql_0.6.0-0ubuntu1_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build graphql-parser-php-0.6.0
+dpkg-buildpackage: full upload; Debian-native package (full source is included)
+Now running lintian...
+warning: the authors of lintian do not recommend running it with root privileges!
+W: php-graphql source: native-package-with-dash-version
+W: php-graphql source: maintainer-script-lacks-debhelper-token debian/postinst
+W: php-graphql source: maintainer-script-lacks-debhelper-token debian/prerm
+W: php-graphql source: debian-rules-missing-recommended-target build-arch
+W: php-graphql source: debian-rules-missing-recommended-target build-indep
+W: php-graphql source: missing-license-paragraph-in-dep5-copyright mit (paragraph at line 5)
+W: php-graphql source: newer-standards-version 3.9.8 (current is 3.9.5)
+E: php-graphql: binary-or-shlib-defines-rpath usr/lib/php5/20121212/graphql.so /usr/local/lib
+E: php-graphql: missing-dependency-on-phpapi
+W: php-graphql: maintainer-script-ignores-errors prerm
+W: php-graphql: maintainer-script-ignores-errors postinst
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile php-graphql_0.6.0-0ubuntu1.dsc Emre Sokullu <emre@phonetworks.org>
+
+ signfile php-graphql_0.6.0-0ubuntu1_amd64.changes Emre Sokullu <emre@phonetworks.org>
+
+Successfully signed dsc and changes files

@@ -1,0 +1,232 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: warning: using a gain-root-command while being root
+dpkg-buildpackage: source package libgraphqlparser
+dpkg-buildpackage: source version 0.6.0-0ubuntu1
+dpkg-buildpackage: source distribution trusty
+dpkg-buildpackage: source changed by Emre Sokullu <emre@phonetworks.org>
+ dpkg-source --before-build libgraphqlparser-0.6.0
+dpkg-buildpackage: host architecture i386
+dpkg-source: info: applying dump_json_ast.cpp.patch
+ fakeroot debian/rules clean
+dh clean --buildsystem=cmake
+   dh_testdir -O--buildsystem=cmake
+   dh_auto_clean -O--buildsystem=cmake
+   dh_clean -O--buildsystem=cmake
+find . -name *pyc -delete
+ dpkg-source -b libgraphqlparser-0.6.0
+dpkg-source: warning: Version number suggests Ubuntu changes, but Maintainer: does not have Ubuntu address
+dpkg-source: warning: Version number suggests Ubuntu changes, but there is no XSBC-Original-Maintainer field
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building libgraphqlparser using existing ./libgraphqlparser_0.6.0.orig.tar.gz
+dpkg-source: info: building libgraphqlparser in libgraphqlparser_0.6.0-0ubuntu1.debian.tar.gz
+dpkg-source: info: building libgraphqlparser in libgraphqlparser_0.6.0-0ubuntu1.dsc
+ debian/rules build
+dh build --buildsystem=cmake
+   dh_testdir -O--buildsystem=cmake
+   dh_auto_configure -O--buildsystem=cmake
+-- The C compiler identification is GNU 4.8.4
+-- The CXX compiler identification is GNU 4.8.4
+-- Check for working C compiler: /usr/bin/i686-linux-gnu-gcc
+-- Check for working C compiler: /usr/bin/i686-linux-gnu-gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/i686-linux-gnu-g++
+-- Check for working CXX compiler: /usr/bin/i686-linux-gnu-g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.6", minimum required is "2") 
+-- Could NOT find BISON (missing:  BISON_EXECUTABLE) (Required is at least version "3")
+-- Could NOT find FLEX (missing:  FLEX_EXECUTABLE) 
+CMake Warning at python/CMakeLists.txt:13 (MESSAGE):
+  ctypesgen.py not found; install with pip or easy_install if you want to run
+  pythontest.py.
+
+
+-- Could NOT find PkgConfig (missing:  PKG_CONFIG_EXECUTABLE) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu
+   dh_auto_build -O--buildsystem=cmake
+make[1]: Entering directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+/usr/bin/cmake -H/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 -B/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[2]: Entering directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+make -f CMakeFiles/graphqlparser.dir/build.make CMakeFiles/graphqlparser.dir/depend
+make[3]: Entering directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 9
+[  5%] Generating JsonVisitor.cpp.inc
+/usr/bin/python2 /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/ast/ast.py cxx_json_visitor_impl /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/ast/ast.ast > /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/JsonVisitor.cpp.inc
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 2
+[ 10%] Generating Ast.h
+/usr/bin/python2 /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/ast/ast.py cxx /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/ast/ast.ast > /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/Ast.h
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 3
+[ 15%] Generating Ast.cpp
+/usr/bin/python2 /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/ast/ast.py cxx_impl /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/ast/ast.ast > /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/Ast.cpp
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 4
+[ 21%] Generating AstVisitor.h
+/usr/bin/python2 /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/ast/ast.py cxx_visitor /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/ast/ast.ast > /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/AstVisitor.h
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 5
+[ 26%] Generating c/GraphQLAst.h
+/usr/bin/python2 /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/ast/ast.py c /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/ast/ast.ast > /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/c/GraphQLAst.h
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 6
+[ 31%] Generating c/GraphQLAst.cpp
+/usr/bin/python2 /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/ast/ast.py c_impl /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/ast/ast.ast > /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/c/GraphQLAst.cpp
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 7
+[ 36%] Generating c/GraphQLAstForEachConcreteType.h
+/usr/bin/python2 /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/ast/ast.py c_visitor_impl /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/ast/ast.ast > /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/c/GraphQLAstForEachConcreteType.h
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 8
+[ 42%] Generating JsonVisitor.h.inc
+/usr/bin/python2 /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/ast/ast.py cxx_json_visitor_header /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/ast/ast.ast > /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/JsonVisitor.h.inc
+cd /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles/graphqlparser.dir/DependInfo.cmake --color=
+Scanning dependencies of target graphqlparser
+make[3]: Leaving directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+make -f CMakeFiles/graphqlparser.dir/build.make CMakeFiles/graphqlparser.dir/build
+make[3]: Entering directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 10
+[ 47%] Building CXX object CMakeFiles/graphqlparser.dir/JsonVisitor.cpp.o
+/usr/bin/i686-linux-gnu-g++   -Dgraphqlparser_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -std=gnu++11 -fPIC -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu    -o CMakeFiles/graphqlparser.dir/JsonVisitor.cpp.o -c /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/JsonVisitor.cpp
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 11
+[ 52%] Building CXX object CMakeFiles/graphqlparser.dir/Ast.cpp.o
+/usr/bin/i686-linux-gnu-g++   -Dgraphqlparser_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -std=gnu++11 -fPIC -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu    -o CMakeFiles/graphqlparser.dir/Ast.cpp.o -c /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/Ast.cpp
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 12
+[ 57%] Building CXX object CMakeFiles/graphqlparser.dir/c/GraphQLAst.cpp.o
+/usr/bin/i686-linux-gnu-g++   -Dgraphqlparser_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -std=gnu++11 -fPIC -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu    -o CMakeFiles/graphqlparser.dir/c/GraphQLAst.cpp.o -c /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/c/GraphQLAst.cpp
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 13
+[ 63%] Building CXX object CMakeFiles/graphqlparser.dir/c/GraphQLAstNode.cpp.o
+/usr/bin/i686-linux-gnu-g++   -Dgraphqlparser_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -std=gnu++11 -fPIC -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu    -o CMakeFiles/graphqlparser.dir/c/GraphQLAstNode.cpp.o -c /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/c/GraphQLAstNode.cpp
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 14
+[ 68%] Building CXX object CMakeFiles/graphqlparser.dir/c/GraphQLAstToJSON.cpp.o
+/usr/bin/i686-linux-gnu-g++   -Dgraphqlparser_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -std=gnu++11 -fPIC -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu    -o CMakeFiles/graphqlparser.dir/c/GraphQLAstToJSON.cpp.o -c /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/c/GraphQLAstToJSON.cpp
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 15
+[ 73%] Building CXX object CMakeFiles/graphqlparser.dir/c/GraphQLAstVisitor.cpp.o
+/usr/bin/i686-linux-gnu-g++   -Dgraphqlparser_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -std=gnu++11 -fPIC -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu    -o CMakeFiles/graphqlparser.dir/c/GraphQLAstVisitor.cpp.o -c /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/c/GraphQLAstVisitor.cpp
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 16
+[ 78%] Building CXX object CMakeFiles/graphqlparser.dir/c/GraphQLParser.cpp.o
+/usr/bin/i686-linux-gnu-g++   -Dgraphqlparser_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -std=gnu++11 -fPIC -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu    -o CMakeFiles/graphqlparser.dir/c/GraphQLParser.cpp.o -c /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/c/GraphQLParser.cpp
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 17
+[ 84%] Building CXX object CMakeFiles/graphqlparser.dir/parser.tab.cpp.o
+/usr/bin/i686-linux-gnu-g++   -Dgraphqlparser_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -std=gnu++11 -fPIC -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu    -o CMakeFiles/graphqlparser.dir/parser.tab.cpp.o -c /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/parser.tab.cpp
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 18
+[ 89%] Building CXX object CMakeFiles/graphqlparser.dir/lexer.cpp.o
+/usr/bin/i686-linux-gnu-g++   -Dgraphqlparser_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -std=gnu++11 -fPIC -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu    -o CMakeFiles/graphqlparser.dir/lexer.cpp.o -c /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/lexer.cpp
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 19
+[ 94%] Building CXX object CMakeFiles/graphqlparser.dir/GraphQLParser.cpp.o
+/usr/bin/i686-linux-gnu-g++   -Dgraphqlparser_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -std=gnu++11 -fPIC -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu    -o CMakeFiles/graphqlparser.dir/GraphQLParser.cpp.o -c /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/GraphQLParser.cpp
+Linking CXX shared library libgraphqlparser.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/graphqlparser.dir/link.txt --verbose=1
+/usr/bin/i686-linux-gnu-g++  -fPIC -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -std=gnu++11  -Wl,-Bsymbolic-functions -Wl,-z,relro -shared -Wl,-soname,libgraphqlparser.so -o libgraphqlparser.so CMakeFiles/graphqlparser.dir/JsonVisitor.cpp.o CMakeFiles/graphqlparser.dir/Ast.cpp.o CMakeFiles/graphqlparser.dir/c/GraphQLAst.cpp.o CMakeFiles/graphqlparser.dir/c/GraphQLAstNode.cpp.o CMakeFiles/graphqlparser.dir/c/GraphQLAstToJSON.cpp.o CMakeFiles/graphqlparser.dir/c/GraphQLAstVisitor.cpp.o CMakeFiles/graphqlparser.dir/c/GraphQLParser.cpp.o CMakeFiles/graphqlparser.dir/parser.tab.cpp.o CMakeFiles/graphqlparser.dir/lexer.cpp.o CMakeFiles/graphqlparser.dir/GraphQLParser.cpp.o 
+make[3]: Leaving directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles  2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+[ 94%] Built target graphqlparser
+make -f CMakeFiles/dump_json_ast.dir/build.make CMakeFiles/dump_json_ast.dir/depend
+make[3]: Entering directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+cd /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles/dump_json_ast.dir/DependInfo.cmake --color=
+Scanning dependencies of target dump_json_ast
+make[3]: Leaving directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+make -f CMakeFiles/dump_json_ast.dir/build.make CMakeFiles/dump_json_ast.dir/build
+make[3]: Entering directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 1
+[100%] Building CXX object CMakeFiles/dump_json_ast.dir/dump_json_ast.cpp.o
+/usr/bin/i686-linux-gnu-g++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -std=gnu++11 -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 -I/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu    -o CMakeFiles/dump_json_ast.dir/dump_json_ast.cpp.o -c /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/dump_json_ast.cpp
+Linking CXX executable dump_json_ast
+/usr/bin/cmake -E cmake_link_script CMakeFiles/dump_json_ast.dir/link.txt --verbose=1
+/usr/bin/i686-linux-gnu-g++   -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -std=gnu++11   -Wl,-Bsymbolic-functions -Wl,-z,relro CMakeFiles/dump_json_ast.dir/dump_json_ast.cpp.o  -o dump_json_ast -rdynamic libgraphqlparser.so -Wl,-rpath,/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu 
+make[3]: Leaving directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles  1
+[100%] Built target dump_json_ast
+make[2]: Leaving directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 0
+make[1]: Leaving directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+   dh_auto_test -O--buildsystem=cmake
+ fakeroot debian/rules binary
+dh binary --buildsystem=cmake
+   dh_testroot -O--buildsystem=cmake
+   dh_prep -O--buildsystem=cmake
+   dh_auto_install -O--buildsystem=cmake
+make[1]: Entering directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+/usr/bin/cmake -H/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 -B/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[2]: Entering directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+make -f CMakeFiles/graphqlparser.dir/build.make CMakeFiles/graphqlparser.dir/depend
+make[3]: Entering directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+cd /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles/graphqlparser.dir/DependInfo.cmake --color=
+make[3]: Leaving directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+make -f CMakeFiles/graphqlparser.dir/build.make CMakeFiles/graphqlparser.dir/build
+make[3]: Entering directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+make[3]: Nothing to be done for `CMakeFiles/graphqlparser.dir/build'.
+make[3]: Leaving directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles  2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+[ 94%] Built target graphqlparser
+make -f CMakeFiles/dump_json_ast.dir/build.make CMakeFiles/dump_json_ast.dir/depend
+make[3]: Entering directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+cd /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0 /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles/dump_json_ast.dir/DependInfo.cmake --color=
+make[3]: Leaving directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+make -f CMakeFiles/dump_json_ast.dir/build.make CMakeFiles/dump_json_ast.dir/build
+make[3]: Entering directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+make[3]: Nothing to be done for `CMakeFiles/dump_json_ast.dir/build'.
+make[3]: Leaving directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles  1
+[100%] Built target dump_json_ast
+make[2]: Leaving directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu/CMakeFiles 0
+make -f CMakeFiles/Makefile2 preinstall
+make[2]: Entering directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+make[2]: Nothing to be done for `preinstall'.
+make[2]: Leaving directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: "None"
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/include/graphqlparser/c
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/include/graphqlparser/c/GraphQLAstNode.h
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/include/graphqlparser/c/GraphQLAstVisitor.h
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/include/graphqlparser/c/GraphQLAstToJSON.h
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/include/graphqlparser/c/GraphQLParser.h
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/include/graphqlparser/c
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/include/graphqlparser/c/GraphQLAst.h
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/include/graphqlparser/c/GraphQLAstForEachConcreteType.h
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/include/graphqlparser/Ast.h
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/include/graphqlparser/AstNode.h
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/include/graphqlparser/AstVisitor.h
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/include/graphqlparser/GraphQLParser.h
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/include/graphqlparser/JsonVisitor.h
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/include/graphqlparser/lexer.h
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/include/graphqlparser/location.hh
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/include/graphqlparser/parser.tab.hpp
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/include/graphqlparser/position.hh
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/include/graphqlparser/stack.hh
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/include/graphqlparser/syntaxdefs.h
+-- Installing: /home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/debian/libgraphqlparser/usr/lib/libgraphqlparser.so
+make[1]: Leaving directory `/home/adm1/libgraphqlparser-ubuntu-14.04-i386/libgraphqlparser-0.6.0/obj-i686-linux-gnu'
+   dh_installdocs -O--buildsystem=cmake
+   dh_installchangelogs -O--buildsystem=cmake
+   dh_perl -O--buildsystem=cmake
+   dh_link -O--buildsystem=cmake
+   dh_compress -O--buildsystem=cmake
+   dh_fixperms -O--buildsystem=cmake
+   dh_strip -O--buildsystem=cmake
+   dh_makeshlibs -O--buildsystem=cmake
+   dh_shlibdeps -O--buildsystem=cmake
+   dh_installdeb -O--buildsystem=cmake
+   dh_gencontrol -O--buildsystem=cmake
+   dh_md5sums -O--buildsystem=cmake
+   dh_builddeb -O--buildsystem=cmake
+dpkg-deb: building package `libgraphqlparser' in `../libgraphqlparser_0.6.0-0ubuntu1_i386.deb'.
+ dpkg-genchanges  >../libgraphqlparser_0.6.0-0ubuntu1_i386.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build libgraphqlparser-0.6.0
+dpkg-source: info: unapplying dump_json_ast.cpp.patch
+dpkg-buildpackage: full upload (original source is included)
+Now running lintian...
+warning: the authors of lintian do not recommend running it with root privileges!
+W: libgraphqlparser source: newer-standards-version 3.9.8 (current is 3.9.5)
+W: libgraphqlparser: shlib-without-versioned-soname usr/lib/libgraphqlparser.so libgraphqlparser.so
+E: libgraphqlparser: postinst-must-call-ldconfig usr/lib/libgraphqlparser.so
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile libgraphqlparser_0.6.0-0ubuntu1.dsc Emre Sokullu <emre@phonetworks.org>
+
+ signfile libgraphqlparser_0.6.0-0ubuntu1_i386.changes Emre Sokullu <emre@phonetworks.org>
+
+Successfully signed dsc and changes files

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "Enabling graphql PHP extension"
+php5enmod z_graphql

@@ -1,0 +1,11 @@
+%dir /usr/lib/debug
+%dir /usr/lib/debug/usr
+%dir /usr/lib/debug/usr/lib
+%dir /usr/lib/debug/usr/lib/php
+%dir /usr/lib/debug/usr/lib/php/modules
+%dir /usr/lib/debug/.build-id
+%dir /usr/lib/debug/.build-id/8c
+/usr/lib/debug/usr/lib/php/modules/graphql.so.debug
+/usr/lib/debug/.build-id/8c/2597a324d5bb4605c925f2890b7f220b5888d6.debug
+/usr/lib/debug/.build-id/8c/2597a324d5bb4605c925f2890b7f220b5888d6
+/usr/src/debug/php-pecl-graphql-0.6.0
