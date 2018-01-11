@@ -36,14 +36,15 @@ sudo rm /var/lib/neo4j/data/dbms/auth
 curl -H "Content-Type: application/json" -X POST -d '{"password":"password"}' -u neo4j:neo4j http://localhost:7474/user/neo4j/password
 
 # part 2
-# sudo useradd pho
-# sudo mkdir /var/log/pho
-# sudo chown -R pho.pho /var/log/pho
-# sudo apt-get install -y supervisor
-# sudo touch /etc/supervisor/conf.d/pho.conf
-# sudo echo -e "[program:pho]\ncommand=php /opt/pho-server-rest/run.php\nuser=pho\nautostart=true\nautorestart=true\nstderr_logfile=/var/log/pho/long.err.log\nstdout_logfile=/var/log/pho/long.out.log" > /etc/supervisor/conf.d/pho.conf
+sudo useradd pho
+sudo mkdir /var/log/pho
+sudo chown -R pho.pho /var/log/pho
+sudo apt-get install -y supervisor
+sudo touch /etc/supervisor/conf.d/pho.conf
+sudo echo -e "[program:pho]\ncommand=php /opt/pho-server-rest/run.php\nuser=pho\nautostart=true\nautorestart=true\nstderr_logfile=/var/log/pho/long.err.log\nstdout_logfile=/var/log/pho/long.out.log" > /etc/supervisor/conf.d/pho.conf
 # cd /opt/pho-server-rest
 # composer install
-# sudo supervisorctl reload
-# sudo supervisorctl update
+sudo supervisorctl reload
+sudo supervisorctl update
+sudo systemctl disable supervisor
 # sudo systemctl enable supervisor
