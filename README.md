@@ -11,6 +11,10 @@ vagrant init phonetworks/xenial-pho
 vagrant up
 ```
 
+## Warning
+
+The dpkg and rpm package sources under the src/ folder have not been checked, and are not guaranteed to work. The Vagrant box is built for, and guaranteed to work with Ubuntu 16.04 only. 
+
 ## Cleanup
 
 After every modification, the following should be run to make sure the box is clean:
