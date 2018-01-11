@@ -1,4 +1,4 @@
-# vagrant
+# Vagrant
 
 Preparation scripts for for [xenial-pho](https://app.vagrantup.com/phonetworks/boxes/xenial-pho) Vagrant box.
 
