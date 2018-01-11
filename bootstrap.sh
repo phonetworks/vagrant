@@ -6,9 +6,17 @@ sudo apt-get update
 sudo apt-get remove php7.0 -y
 sudo apt-get install -y redis-server gcc 
 sudo apt-get install -y curl php7.1 php7.1-fpm php7.1-cli php7.1-common php7.1-mbstring php7.1-gd php7.1-intl php7.1-xml php7.1-mysql php7.1-mcrypt php7.1-zip php7.1-dev php7.1-bcmath
-sudo dpkg -i /opt/pho-kernel/bin/ubuntu-16.04/libgraphqlparser_0.6.0-0ubuntu1_amd64.deb
-sudo dpkg -i /opt/pho-kernel/bin/ubuntu-16.04/php-graphql_0.6.0-0ubuntu1_amd64.deb
+
+# modified
 cd /tmp
+wget https://github.com/phonetworks/vagrant/raw/master/bin/ubuntu-16.04/libgraphqlparser_0.6.0-0ubuntu1_amd64.deb
+wget https://github.com/phonetworks/vagrant/raw/master/bin/ubuntu-16.04/php-graphql_0.6.0-0ubuntu1_amd64.deb
+sudo dpkg -i ./libgraphqlparser_0.6.0-0ubuntu1_amd64.deb
+sudo rm ./libgraphqlparser_0.6.0-0ubuntu1_amd64.deb
+sudo dpkg -i ./php-graphql_0.6.0-0ubuntu1_amd64.deb
+sudo rm ./php-graphql_0.6.0-0ubuntu1_amd64.deb
+# modified ends
+
 sudo apt-get install -y composer
 sudo mv /etc/php/7.0/mods-available/z_graphql.ini /etc/php/7.1/mods-available/z_graphql.ini
 sudo ln -s /etc/php/7.1/mods-available/z_graphql.ini /etc/php/7.1/cli/conf.d/21-graphql.ini
