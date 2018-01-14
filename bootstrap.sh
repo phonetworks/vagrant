@@ -40,6 +40,7 @@ echo 'deb http://debian.neo4j.org/repo stable/' | sudo tee /etc/apt/sources.list
 sudo apt update
 sudo apt install -y neo4j
 sudo service neo4j restart
+sleep 10s # it takes time for neo4j to initiate
 sudo rm /var/lib/neo4j/data/dbms/auth
 curl -H "Content-Type: application/json" -X POST -d '{"password":"password"}' -u neo4j:neo4j http://localhost:7474/user/neo4j/password
 
